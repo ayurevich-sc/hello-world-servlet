@@ -9,8 +9,8 @@ node
     stage('copy & unzip')
 	{
 		copyArtifacts filter: '/home/andrey/.jenkins/jobs/test_pipeline/workspace/artifacts/artifacts/repo/target/helloworld.war', fingerprintArtifacts: true, projectName: 'test_pipeline', selector: lastSuccessful(), target: '/home/andrey/sources/apache-tomcat-7.0.73/webapps/ROOT'
+		sh "jar -xf ${tomcat_root}/helloworld.war"
 		
 	}
-	}
-	}  
+	  } 
   }
