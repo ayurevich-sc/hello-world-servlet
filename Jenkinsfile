@@ -2,6 +2,6 @@ node
   {
     stage("test")
 	{
-	 sh :"pwd"
+	 sh :"touch qwerty124"
 	}
   }  
