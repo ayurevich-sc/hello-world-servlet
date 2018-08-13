@@ -2,6 +2,6 @@ node
   {
     stage("test")
 	{
-	 sh :"touch qwerty124"
+	 sh :"ls -al &&pwd && touch qwerty124"
 	}
   }  
